@@ -1,0 +1,15 @@
+.message-input-container {
+  display: flex;
+}
+
+.message-input-textbox {
+  padding: 15px 10px;
+  flex: 1;
+  border-radius: 5px;
+}
+
+.send-message-button {
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}

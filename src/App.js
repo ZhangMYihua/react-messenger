@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { useContext, Fragment } from "react";
+
+import Login from "./components/login/login.component";
+import ChatRoom from "./components/chatroom/chatroom.component";
+
+import { AuthContext } from "./contexts/auth.context";
+
+import "./app.scss";
 
 function App() {
+  const { user } = useContext(AuthContext);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <h1>Chatroom Messenger </h1>
+      {user ? (
+        <Fragment>
+          <h2>Signed in as {user.displayName}</h2>
+          <ChatRoom />
+        </Fragment>
+      ) : (
+        <Login />
+      )}
     </div>
   );
 }
