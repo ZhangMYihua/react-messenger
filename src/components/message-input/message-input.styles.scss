@@ -3,13 +3,21 @@
 }
 
 .message-input-textbox {
-  padding: 15px 10px;
+  padding: 15px;
   flex: 1;
-  border-radius: 5px;
+  border-radius: 50px 50px 50px 50px;
+  background-color: rgb(233, 233, 233);
+  border: none;
+  outline: none;
+  font-size: 14px;
 }
 
 .send-message-button {
   padding: 15px;
-  border-radius: 5px;
+  border-radius: 35px;
+  margin-left: 20px;
   cursor: pointer;
+  border: none;
+  background-color: dodgerblue;
+  color: #fff;
 }

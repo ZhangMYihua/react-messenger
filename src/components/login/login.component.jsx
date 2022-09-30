@@ -1,9 +1,8 @@
 import { useContext } from "react";
-
 import { AuthContext } from "../../contexts/auth.context";
-
+// // import { ReactComponent as Google } from "./google.png";
 import Button from "../button/button.component";
-
+import Google from "./google.png";
 import "./login.styles.scss";
 
 const Login = () => {
@@ -14,6 +13,7 @@ const Login = () => {
       <h2>Sign in with Google</h2>
 
       <Button buttonType="google" type="button" onClick={login}>
+        <img src={Google} alt="" width={35} />
         Sign In With Google
       </Button>
     </div>
