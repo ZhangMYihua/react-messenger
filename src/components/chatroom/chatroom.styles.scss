@@ -3,16 +3,22 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
+  overflow: hidden;
 }
 
 .messages-container {
   width: 100%;
   height: 500px;
-  border: 1px solid grey;
+  border: 1px solid #f1f1f1;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 30px;
+  overflow: auto;
+  background-color: #fff;
+}
+ul::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
 }
